@@ -1,0 +1,18 @@
+<h1>Listing food events</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Meal Type</th>
+  </tr>
+ 
+  <% @food_events.each do |food_event| %>
+    <tr>
+      <td><%= food_event.title %></td>
+      <td><%= food_event.description %></td>
+      <td><%= food_event.meal_type %></td>
+      <td><%= link_to 'Show', food_event_path(food_event) %></td>
+    </tr>
+  <% end %>
+</table>
