@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :api, defaults: { format: :json }, path: '/' do
+    # We are going to list our resources here
+  end
+
   resources :food_events  
 
   get 'sessions/create'
