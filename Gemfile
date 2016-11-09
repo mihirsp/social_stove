@@ -30,6 +30,9 @@ gem 'omniauth-facebook'
 
 gem 'pg'
 
+# For getting error logs written in heroku
+gem 'rails_12factor'
+
 #Api gems
 gem 'active_model_serializers'
 
